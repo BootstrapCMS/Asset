@@ -22,7 +22,7 @@ php artisan package:install lightgear/asset
 ### Manual
 Just require
 ```json
-"lightgear/asset": "1.1"
+"lightgear/asset": "1.3"
 ```
 in your composer.json
 and run
@@ -144,8 +144,3 @@ When using caching, you would need to do the same
 sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX app/storage
 sudo setfacl -dR -m u:www-data:rwX -m u:`whoami`:rwX app/storage
 ```
-
-## Changelog
-1.1: Laravel 4.1 compatibility  
-1.0: add support for asset groups and improve cache handling  
-0.8: initial release

@@ -135,7 +135,7 @@ class Asset {
             if ($this->config->get('asset::use_cache') && Cache::has($cacheKey))
             {
                 $output .= Cache::get($cacheKey);
-            } else {
+            } elseif (array_key_exists($group, $this->{$type})) {
                 $this->processAssets($this->{$type}[$group], $group);
                 $output .= $this->publish($type, $group);
             }
