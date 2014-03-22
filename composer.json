@@ -5,22 +5,21 @@
         {
             "name": "Donato Rotunno",
             "email": "ralf57@gmail.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@mineuk.com"
         }
     ],
     "require": {
         "php": ">=5.3.3",
         "illuminate/support": "4.*",
         "leafo/lessphp": "0.4.*",
-        "mrclay/minify": "2.1.*"
+        "mrclay/minify": "2.2.*"
     },
     "autoload": {
         "psr-0": {
             "Lightgear\\Asset": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "1.x-dev"
         }
     }
 }
