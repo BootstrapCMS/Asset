@@ -1,6 +1,6 @@
 {
     "name": "lightgear/asset",
-    "description": "Easy asset Management for Laravel 4",
+    "description": "Easy asset Management for Laravel",
     "authors": [
         {
             "name": "Donato Rotunno",
@@ -12,14 +12,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "illuminate/support": "4.*",
-        "leafo/lessphp": "0.4.*",
-        "mrclay/minify": "2.2.*"
+        "php": ">=5.4.7",
+        "illuminate/console": "5.0.*",
+        "illuminate/contracts": "5.0.*",
+        "illuminate/support": "5.0.*",
+        "mrclay/minify": "~2.2"
     },
     "autoload": {
-        "psr-0": {
-            "Lightgear\\Asset": "src/"
+        "psr-4": {
+            "Lightgear\\Asset\\": "src/"
         }
     }
 }

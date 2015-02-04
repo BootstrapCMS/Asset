@@ -1,11 +1,11 @@
-<?php namespace Lightgear\Asset\Commands;
+<?php
+
+namespace Lightgear\Asset\Console\Commands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
 
-class Generate extends Command {
-
+class GenerateAssets extends Command
+{
     /**
      * The console command name.
      *
@@ -27,11 +27,12 @@ class Generate extends Command {
      */
     public function fire()
     {
-        $asset = \App::make('asset');
+        $asset = $this->laravel->make('asset');
+
+        $asset->clean();
         $asset->styles();
         $asset->scripts();
 
-        $this->line('Generated and published assets');
+        $this->line('Generated and published assets.');
     }
-
 }

@@ -1,11 +1,11 @@
-<?php namespace Lightgear\Asset\Commands;
+<?php
+
+namespace Lightgear\Asset\Console\Commands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
 
-class Clean extends Command {
-
+class CleanAssets extends Command
+{
     /**
      * The console command name.
      *
@@ -27,10 +27,10 @@ class Clean extends Command {
      */
     public function fire()
     {
-        $asset = \App::make('asset');
+        $asset = $this->laravel->make('asset');
+
         $asset->clean();
 
         $this->line('Cleaned up all published assets.');
     }
-
 }
