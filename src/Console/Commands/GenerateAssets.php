@@ -18,7 +18,7 @@ class GenerateAssets extends Command
      *
      * @var string
      */
-    protected $description = "Generate and publish the registered assets";
+    protected $description = 'Generate and publish the registered assets';
 
     /**
      * Execute the console command.
