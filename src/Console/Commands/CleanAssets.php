@@ -18,7 +18,7 @@ class CleanAssets extends Command
      *
      * @var string
      */
-    protected $description = "Delete existing published assets";
+    protected $description = 'Delete existing published assets';
 
     /**
      * Execute the console command.
